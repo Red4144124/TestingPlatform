@@ -5,7 +5,7 @@ import os
 import curses
 
 devices = {
-    "Тонкий клиент": {
+    "Device 1": {
         "tests": [
             {"name": "Тестирование процессора", "command": "Cpu_Test.sh"},
             {"name": "Проверка Ethernet интерфейсов", "command": "Ethernet.sh"},
@@ -15,7 +15,7 @@ devices = {
             {"name": "USB скорость записи/считывания", "command": "USBspeed.sh"}
         ]
     },
-    "Планшет-Навигатор": {
+    "Device 2": {
         "tests": [
             {"name": "Test 1 Python", "command": "test3.py"},
             {"name": "Test 2 Bash", "command": "test4.sh"}
@@ -24,7 +24,7 @@ devices = {
     # Add another tests
 }
 
-program_title = "Elvees Testing Platform v0.0.4"
+program_title = "Testing Platform v0.0.4"
 
 def draw_menu(stdscr, options, selected_row):
     stdscr.clear()
