@@ -5,16 +5,17 @@ import os
 import curses
 
 devices = {
-    "Device 1": {
+    "Тонкий клиент": {
         "tests": [
             {"name": "Тестирование процессора", "command": "Cpu_Test.sh"},
             {"name": "Проверка Ethernet интерфейсов", "command": "Ethernet.sh"},
             {"name": "Тестирование накопителя", "command": "HardDisk.sh"},
             {"name": "Проверка видео-интерфейсов", "command": "VideoPort.sh"},
-            {"name": "USB интерфейсы", "command": "USB.sh"}
+            {"name": "USB интерфейсы", "command": "USB.sh"},
+            {"name": "USB скорость записи/считывания", "command": "USBspeed.sh"}
         ]
     },
-    "Device 2": {
+    "Планшет-Навигатор": {
         "tests": [
             {"name": "Test 1 Python", "command": "test3.py"},
             {"name": "Test 2 Bash", "command": "test4.sh"}
